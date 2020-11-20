@@ -1,0 +1,267 @@
+.info{
+    background: #FFFF33;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    color: #FF6600;
+    background: url(../img/about-img.jpg)center/cover
+        fixed no-repeat;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #FF6600;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #FFFF33;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: darkorange;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: orange;
+  color: #242424;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.primary-color{
+    color: #FF6600;
+}
+.info h2{
+    word-spacing: 0.6rem;
+}
+.info a{
+    transition: color 2s ease-in-out 4s;
+}
+.info a:hover{
+    color: #242424;
+}
+
+.height-90{
+    min-height: calc(100vh-94px);
+}
+.banner h1{
+    border-top: 6px dotted #FFFF33;
+    border-bottom: 6px dotted #FFFF33;
+    animation: fromLeft;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes fromLeft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1; 
+    }
+}
+.main-btn{
+    color: #FF6600;
+    font-size: 2rem;
+    border:2px solid #FF6600;
+    transition: all is ease-in-out;
+}
+.main-btn:hover{
+    color: #242424;
+    border: 2px solid #FFFF33;
+    background: #FFFF33;
+}
+.sushi-btn{
+    animation: fromRight;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes fromRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1; 
+    }
+}
+.header-link{
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: #FFFF33;
+    border-radius: 10px;
+    transition: all is 2s ease;
+    animation: fromBottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+.header-link:hover{
+    color: #242424;
+}
+
+.item-container{
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgb(0,0,0),rgb(0,0,0));
+    transition: all 2s ease;
+}.item-img{
+    transition: all 2s ease;
+}
+.item-container:hover .item-img{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+.item-link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #FF6600;
+    font-size: 2rem;
+    border-top: 3px solid #FF6600;
+    border-bottom:3px solid #FF6600;
+    transition: 2s all ease;
+   /* opacity: 0;*/
+}
+.item-container:hover .item-link{
+    opacity: 1;
+}
+.item-link:hover{
+    color:#FFFF33;
+    border:3px solid #FFFF33;
+    background: #FFFF33;
+    color:#242424;
+}
+.item-container:hover{
+    outline: 10px solid #FF6600;
+    outline-offset: 0.8rem;
+}
+#menu{
+    background: url(../img/iimg.jpg)center/cover fixed no-repeat;
+}
+.special{
+    border: 3px solid #FF6600;
+    position: relative;
+    top: 0;
+    right: 10%;
+    background: #FF6600;
+    padding:0 0.4rem;
+}
+#more{
+    display: none;
+}
+.about-pictures{
+    position: relative;
+}
+.about-image{
+    position: absolute;
+    width: 150px;
+    transition: all 2s ease;
+    opacity: 0.9;
+}
+.img-1{
+    left:0%;
+    top:20%;
+}
+.img-2{
+    left:20%;
+    top:35%;
+z-index:20;
+}
+.img-3{
+    left:40%;
+    top:20%;
+z-index:10;
+}
+.img-4{
+    left:40%;
+    top:50%;
+}
+.img-5{
+    left:0%;
+    top:50%;
+z-index:20;
+}
+.about-image:hover{
+    outline:10px solid #FF6600;
+    outline-offset: 0.8rem;
+    transform: scale(1.3)rotate(20deg);
+    z-index: 30;
+    opacity: 1;
+}
+.height-60{
+    min-height: 60vh;
+}
+#contact .card{
+    background: rgba(0,0,0,0.5);
+    transition: all 2s ease;
+}
+#contact .card: hover{
+    background: rgba(0,0,0,0.8);
+}
+#contact .card-header{
+    color: #FF6600;
+}
+#contact .input-group-text{
+    background:#FF6600;
+    border-collapse: #FF6600;
+    color: #242424;
+}
+#contact .card input{
+    color: #606060;
+}
+.contact-btn{
+    color: #FF6600;
+    border-collapse: #FF6600;
+    background: transparent;
+    transition: all 2s ease-in-out;
+}
+.contact-btn:hover{
+    background: #FFFF33;
+    color: #FF6600;
+    border-color:#FFFF33;
+}
